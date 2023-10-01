@@ -4,13 +4,10 @@ require("dotenv").config();
 
 mongoose.set("strictQuery", true);
 
-const dbUser = process.env.DB_USER;
-const dbPassword = process.env.DB_PASSWORD;
-
-async function main() {
+async function connectToDatabase() {
   try {
     await mongoose.connect(
-      `mongodb+srv://${dbUser}:${dbPassword}@cluster0.07surby.mongodb.net/?retryWrites=true&w=majority`
+      `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0.07surby.mongodb.net/?retryWrites=true&w=majority`
     );
 
     console.log("DB connected successfully!");
@@ -19,4 +16,4 @@ async function main() {
   }
 }
 
-module.exports = main;
+module.exports = connectToDatabase;
