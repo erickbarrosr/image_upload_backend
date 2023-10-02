@@ -1,35 +1,35 @@
-# API de Upload de Imagens
+# Image Upload API
 
-Esta é uma API simples para realizar uploads de imagens. Ela permite que os usuários enviem suas imagens para o servidor e fornece URLs para acessar essas imagens posteriormente.
+This is a simple API for performing image uploads. It allows users to upload their images to the server and provides URLs to access these images later.
 
-## Funcionalidades Principais
+## Key Features
 
-- Upload de imagens para o servidor.
-- Recuperação de URLs para as imagens enviadas.
+- Upload images to the server.
+- Retrieve URLs for the uploaded images.
 
-## Tecnologias Utilizadas
+## Technologies Used
 
 - Node.js
 - Express.js
-- Multer (para gerenciamento de uploads de arquivos)
-- MongoDB (ou outro banco de dados para armazenar metadados das imagens)
+- Multer (for managing file uploads)
+- MongoDB (or another database for storing image metadata)
 
-## Como Usar
+## How to Use
 
-### Configuração
+### Configuration
 
-1. Clone este repositório: `git clone https://github.com/erickbarrosr/image_upload_backend.git`
-2. Navegue até o diretório do projeto: `cd image_upload_backend`
-3. Instale as dependências: `npm install`
-4. Para executar: `npm run start`
+1. Clone this repository: `git clone https://github.com/erickbarrosr/image_upload_backend.git`
+2. Navigate to the project directory: `cd image_upload_backend`
+3. Install dependencies: `npm install`
+4. To run: `npm run start`
 
-### Configuração das Variáveis de Ambiente
+### Environment Variables Configuration
 
-Crie um arquivo `.env` na raiz do projeto com as seguintes variáveis de ambiente:
+Create a `.env` file in the project's root directory with the following environment variables:
 
 1. `PORT=8080`
 2. `UPLOAD_DIR=uploads`
 
-## Contribuição
+## Contribution
 
-Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull requests para melhorar esta API.
+Contributions are welcome! Feel free to open issues and pull requests to improve this API.
